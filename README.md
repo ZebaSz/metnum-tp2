@@ -1,56 +1,29 @@
-# Métodos Numéricos - TP2
+# Métodos Numéricos - Trabajo Práctico 2
 
-## Cómo compilar
+2do Cuatrimestre - 2017
 
-```
-mkdir build && cd build
-cmake ..
-make
-```
+Departamento de Computación,<br/>
+Facultad de Ciencias Exactas y Naturales,<br/>
+Universidad de Buenos Aires
 
-Esto compila todos los targets bajo la carpeta build (que está ignorada). Los targets son:
+## Grupo
 
-- tp2
-- test/correrTests
-- data/crossval
+Nombre: **Fuerte a Pachi**
 
-## Ejecutable principal
+Miembros:
 
-### Cómo ejecutar
+| Nombre                      | Github                                  | Email                    |
+| ----------------------------| --------------------------------------- | ------------------------ |
+| Sebastián Ariel Szperling   | [ZebaSz](https://github.com/ZebaSz)     | zebaszp@gmail.com        |
+| Ignacio Tarrio              | [ITarrio](https://github.com/ITarrio)   | tarrio.ignacio@gmail.com |
+| Manuel Mena                 | [manumena](https://github.com/manumena) | manuelmena1993@gmail.com |
+| Kevin Frachtenberg Goldsmit | [kevinfra](https://github.com/kevinfra) | kevinfra94@gmail.com     |
 
-El mismo contiene instrucciones de uso. El ejecutable toma los parámetros como argumentos de Unix.
+## Entregas
 
-Se recomienda descargar [los datasets de dígitos de Kaggle][1] primero.
+| Entrega   | Tag                                                            | Fecha    | Nota |
+| --------- | -------------------------------------------------------------- | -------- | ---- |
+| Inicial   | [v1.0](https://github.com/ZebaSz/metnum-tp2/releases/tag/v1.0) | 20/10/17 | I    |
+| Reentrega | [v2.0](https://github.com/ZebaSz/metnum-tp2/releases/tag/v2.0) | 03/12/17 | A    |
 
-Ejemplo de ejecución:
-
-```
-./tp2 -m 1 -i data/train.csv -o out.csv -q data/test.csv
-```
-
-## Unit tests
-
-### Cómo ejecutar
-
-El target `test/correrTests` contiene todos los tests. Ejecutarlo efectivamente corre todos los tests.
-
-## Cross-validation
-
-El target `data/crossval` realiza cross-validation estilo kFold
-
-### Cómo ejecutar
-
-Primero tienen que descargar 2 cosas: por un lado, [el dataset de Kaggle][1], y por el otro [los tests de la cátedra][2]. Se recomienda guardar todos los archivos en la carpeta `data`.
-
-`crossval` toma los parámetros por stdin. El formato de estos parámetros está definido en el comprimido con los tests.
-
-Ejemplo de ejecución:
-
-```
-cd build
-cat ../data/test1.in | ./data/crossval
-```
-
-
-[1]: http://www-2.dc.uba.ar/materias/metnum/dnload/2017_C2/tp2/data.zip
-[2]: http://www-2.dc.uba.ar/materias/metnum/dnload/2017_C2/tp2/tests.zip
+*Nota: para que este archivo sea visible en Github, el archivo **README.md** original fue renombrado **instrucciones.md***
